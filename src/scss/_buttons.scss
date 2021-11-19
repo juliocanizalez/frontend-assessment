@@ -43,3 +43,10 @@
     width: 190px;
   }
 }
+
+@media (max-width: $mobile) {
+  .button {
+    width: 100%;
+    margin: 0;
+  }
+}
