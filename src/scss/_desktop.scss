@@ -39,6 +39,7 @@
     color: $white;
   }
 }
+
 //header section
 .header {
   position: relative;
@@ -231,5 +232,52 @@
     display: flex;
     justify-content: center;
     margin-top: 100px;
+  }
+}
+
+//podcast section
+.podcast {
+  position: relative;
+  width: 1500px;
+  height: 549px;
+  margin: 150px auto;
+  img {
+    position: absolute;
+    width: 389px;
+    height: 389px;
+    top: 90px;
+    z-index: 1;
+  }
+  &__description {
+    z-index: 0;
+    position: absolute;
+    height: 549px;
+    width: 85%;
+    right: 0;
+    padding: 50px 290px 50px 250px;
+    background: $lightGrayOpacity;
+    &__topic {
+      text-transform: uppercase;
+      color: $lightGray;
+      font-weight: $bold;
+      font-size: 18px;
+      line-height: 30px;
+      letter-spacing: 0.04em;
+    }
+    &__title {
+      margin-top: 0.76rem;
+      text-transform: uppercase;
+      color: $darkGray;
+      font-weight: $bold;
+      font-size: 36px;
+      line-height: 42px;
+      letter-spacing: 0.03em;
+    }
+    &__text {
+      font-size: 18px;
+      line-height: 30px;
+      color: $darkGray;
+      margin: 2rem 0;
+    }
   }
 }
