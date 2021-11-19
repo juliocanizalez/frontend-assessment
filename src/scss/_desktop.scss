@@ -281,3 +281,67 @@
     }
   }
 }
+
+@media (max-width: $desktopLg) {
+  .header {
+    margin-top: 0;
+    width: 1200px;
+    height: 550px;
+    &__title {
+      top: 80px;
+      width: 500px;
+      height: 500px;
+      padding: 31px 30px 30px 30px;
+      &__buttons {
+        margin-top: 1.9rem;
+      }
+    }
+    &__image {
+      top: 20px;
+      height: 550px;
+      img {
+        position: absolute;
+        right: 0;
+        width: 950px;
+        height: auto;
+      }
+    }
+  }
+  .information {
+    width: 950px;
+    margin-top: 160px;
+  }
+
+  .description {
+    width: 1200px;
+  }
+  .text-left {
+    transform: translate(-10%, 40%);
+  }
+  .products {
+    width: 1200px;
+    &__title {
+      width: 1200px;
+      h3 {
+        font-size: 35px;
+        line-height: 40px;
+      }
+    }
+    &__grid {
+      width: 1200px;
+      &__item {
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+  .products.dark {
+    height: 785px;
+    padding: 80px 0 120px 0;
+  }
+  .podcast {
+    width: 1200px;
+  }
+}
