@@ -33,3 +33,13 @@
   background-color: $darkGray;
   color: $white;
 }
+
+@media (max-width: $desktopLg) {
+  .button {
+    width: 150px;
+  }
+
+  .button--light {
+    width: 190px;
+  }
+}
