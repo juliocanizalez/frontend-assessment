@@ -1,5 +1,21 @@
 @import './global';
 
+//main settings
+@mixin theme(
+  $breakpoint,
+  $textTransform: none,
+  $marginTop: 0,
+  $marginBottom: 0
+) {
+  width: $breakpoint;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: $marginTop;
+  margin-bottom: $marginBottom;
+  color: $darkGray;
+  text-transform: $textTransform;
+}
+
 //link
 .link {
   text-decoration: none;
@@ -44,12 +60,7 @@
 .header {
   position: relative;
   height: 663px;
-  width: 1500px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 59px;
-  color: $darkGray;
-  text-transform: uppercase;
+  @include theme($desktopXl, uppercase, 59px);
   &__title {
     position: absolute;
     width: 633px;
@@ -103,14 +114,11 @@
 //information section
 .information {
   position: relative;
-  width: 1099px;
+  @include theme(1099px, uppercase, 120px, 120px);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
-  margin: 120px auto;
   justify-content: center;
-  color: $darkGray;
-  text-transform: uppercase;
   &__item {
     p {
       margin-top: 1rem;
@@ -125,13 +133,11 @@
 //description section
 .description {
   position: relative;
-  width: 1398px;
+  @include theme(1398px, $marginTop: 100px, $marginBottom: 100px);
   height: 1063px;
-  margin: 100px auto;
   display: grid;
   grid-template-columns: 7fr 4fr;
   gap: 5rem;
-  color: $darkGray;
   &__text {
     font-size: 18px;
     line-height: 31px;
@@ -195,9 +201,8 @@
 //products section
 .products {
   position: relative;
-  width: 1500px;
+  @include theme($desktopXl, $marginTop: 100px, $marginBottom: 100px);
   height: 731px;
-  margin: 100px auto;
   &__title {
     width: 1500px;
     margin: 0 auto;
@@ -246,9 +251,8 @@
 //podcast section
 .podcast {
   position: relative;
-  width: 1500px;
+  @include theme($desktopXl, $marginTop: 150px, $marginBottom: 150px);
   height: 549px;
-  margin: 150px auto;
   img {
     position: absolute;
     width: 389px;
