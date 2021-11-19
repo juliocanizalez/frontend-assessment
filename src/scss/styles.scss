@@ -1,6 +1,10 @@
+@import './keyframes';
+@import './buttons';
+@import './desktop';
+@import './mobile';
+
 @font-face {
   font-family: 'Work Sans';
-  font-display: swap;
   src: url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;700;900&display=swap');
 }
 
@@ -10,6 +14,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: 'Work Sans', sans-serif;
 }
