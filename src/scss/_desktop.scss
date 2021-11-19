@@ -58,6 +58,10 @@
     z-index: 1;
     background: $yellow;
     padding: 31px 66px 59px 79px;
+    -webkit-animation: slide-top 0.5s
+      cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
     h4 {
       font-weight: $bold;
       font-size: 40px;
@@ -89,6 +93,10 @@
     right: 0;
     top: 59px;
     z-index: 0;
+    -webkit-animation: slide-top 0.5s
+      cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
   }
 }
 
@@ -284,7 +292,7 @@
 
 @media (max-width: $desktopLg) {
   .header {
-    margin-top: 0;
+    margin-top: 3.5rem;
     width: 1200px;
     height: 550px;
     &__title {
