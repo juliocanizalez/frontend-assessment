@@ -1,0 +1,100 @@
+@import './global';
+
+@media (max-width: $mobile) {
+  .header {
+    max-width: $mobile;
+    margin-top: 0;
+    &__title {
+      top: 80px;
+      width: 80%;
+      padding-right: 30px;
+      height: 500px;
+      h4 {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        line-height: 1.7rem;
+      }
+      h1 {
+        font-size: 3.2rem;
+      }
+      p {
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+        margin-top: 2rem;
+      }
+      &__buttons {
+        display: grid;
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+    }
+    &__image {
+      top: 0;
+      height: 520px;
+      img {
+        top: 0;
+        height: 520px;
+      }
+    }
+  }
+
+  .information {
+    max-width: $mobile;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .description {
+    width: 90%;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    height: auto;
+    &__image {
+      &::after {
+        box-shadow: none;
+      }
+      img {
+        height: 500px;
+        width: 100%;
+      }
+    }
+  }
+
+  .products {
+    max-width: $mobile;
+    height: auto;
+    &__title {
+      flex-direction: column;
+      width: 90%;
+    }
+    &__grid {
+      width: 90%;
+      gap: 1rem;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__buttons {
+      margin: 2rem auto;
+      width: 90%;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  }
+  .products.dark {
+    height: 1050px;
+  }
+  .podcast {
+    max-width: $mobile;
+    height: auto;
+    img {
+      max-width: 300px;
+      height: auto;
+      top: 0;
+    }
+    &__description {
+      top: 150px;
+      height: auto;
+      width: 100%;
+      padding: 200px 20px 40px 20px;
+    }
+  }
+}
